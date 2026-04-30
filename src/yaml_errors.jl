@@ -106,14 +106,14 @@ function Base.showerror(io::IO, e::AbstractYAMLError)
     print(io, nameof(typeof(e)), ": ")
     if hasproperty(e, :context) && !isempty(e.context)
         print(io,
-          "in ", e.context,
-          " at line ", e.context_mark.line,
-          ", column ", e.context_mark.column, ": ")
+            "in ", e.context,
+            " at line ", e.context_mark.line,
+            ", column ", e.context_mark.column, ": ")
     end
     print(io,
-      e.problem,
-      " at line ", e.problem_mark.line,
-      ", column ", e.problem_mark.column)
+        e.problem,
+        " at line ", e.problem_mark.line,
+        ", column ", e.problem_mark.column)
 end
 
 function throw_yaml_err(parser::LibYAMLParser)
