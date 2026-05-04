@@ -14,6 +14,12 @@ A Julia wrapper for [libyaml](https://github.com/yaml/libyaml), providing fast a
 
 ## Installation
 
+If you haven't installed our [local registry](https://github.com/bhftbootcamp/Green) yet, do that first:
+
+```
+] registry add https://github.com/bhftbootcamp/Green.git
+```
+
 To install LibYAML2, simply use the Julia package manager:
 
 ```julia
